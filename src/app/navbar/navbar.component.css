@@ -1,0 +1,34 @@
+
+.navbar {
+border-radius: 0px;
+margin-bottom:0px;
+ }
+
+
+@font-face{
+	font-family: GothamB;
+}
+
+@font-face{
+	font-family: GothamM;
+}
+
+.hfont{
+	font-family: GothamB;
+	font-size: 18px;
+	color:#ffffff;
+}
+
+.lfont{
+	font-family: GothamB;
+	font-size: 40px;
+	color: #ff8c00;
+}
+
+.login{
+	font-family: GothamM;
+	color: #ffffff;
+}
+
+.btn-danger { border-color: #ff8c00; background-color: #ff8c00; cursor:default; }
+

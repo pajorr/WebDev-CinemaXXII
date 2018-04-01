@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+	font-family: "gothamB"; src: url("./assets/font/GothamMedium.ttf");
+}
+@font-face{
+	font-family: "gothamM"; src: url("./assets/font/GothamBook.ttf");
+}

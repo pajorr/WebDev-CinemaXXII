@@ -1,0 +1,52 @@
+@font-face{
+	font-family: GothamB;
+}
+
+@font-face{
+	font-family: GothamM;
+}
+
+.fullscreen{
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    border-right: 2px solid black;
+    line-height: 100px;
+    font-family: GothamM;
+}
+
+.centerhot {
+    text-align: center;
+    padding-top: 10px;
+    color: #ff8c00;
+    font-size: 30px;
+    border-right: 2px solid black;
+    line-height: 100px;
+    font-family: GothamB;
+}
+
+.center2{
+	text-align: center;
+    padding-top: 45px;
+    color: white;
+    font-size: 16px;
+    font-family: GothamM;
+}
+
+.feed{
+    color: white;
+    font-size: 16px;
+    font-family: GothamM;
+    text-align: center;
+    background-color:#303030;
+    border: solid 1px black; 
+    border-radius: 10px; 
+    background-color: #303030;
+}
+

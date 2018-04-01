@@ -1,0 +1,68 @@
+ <!--<nav class="navbar navbar-inverse navbar-fixed-top">
+
+  <div class=container-fluid style="height:30px; background-color: #222222;">
+
+        
+  </div>
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand lfont" routerLink="/home">CINEMA</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/home"><div class="hfont">HOME</div></a></li>
+      <li><a routerLink="/book"><div class="hfont">BOOK TICKETS</div></a></li>
+      <li><a routerLink="/theatre"><div class="hfont">NOW PLAYING</div></a></li>
+      <li><a routerLink="/about"><div class="hfont">ABOUT US</div></a></li>
+      <li><a routerLink="#"><div class="login">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger">LOGIN</button>
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span></button>                    
+                                        <ul class="dropdown-menu" role="menu">
+                                          <li><a routerLink="/login">SIGN IN</a></li>
+                                          <li><a routerLink="/signup">SIGN UP</a></li>
+                                       </ul>
+                                </div>
+        
+                           </div>
+          </a>
+      </li>
+    </ul>
+  </div>
+</nav>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" >
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand lfont" routerLink="/home">CINEMA XXII</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/home"><div class="hfont">HOME</div></a></li>
+        <li><a routerLink="/book"><div class="hfont">BOOK TICKETS</div></a></li>
+        <li><a routerLink="/theatre"><div class="hfont">NOW PLAYING</div></a></li>
+        <li><a routerLink="/about"><div class="hfont">ABOUT US</div></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <div class="btn-group" style="padding-top: 5px; padding-right: 10px; padding-bottom: 2px;"  *ngIf="!isLogin">
+                                    <button type="button" class="btn btn-danger">LOGIN</button>
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" >
+                                    <span class="caret"></span></button>                    
+                                        <ul class="dropdown-menu" role="menu">
+                                          <li><a routerLink="/login">SIGN IN</a></li>
+                                          <li><a routerLink="/signup">SIGN UP</a></li>
+                                       </ul>
+                                </div>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+           <li><a routerLink="/user"><div class="hfont">PROFILE</div></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

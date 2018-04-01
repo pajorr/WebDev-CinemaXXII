@@ -1,0 +1,9 @@
+label{
+	color: black;
+}
+
+.signup{
+	background-color: white;
+}
+
+.btn-submit { border-color: black; background-color: white; }

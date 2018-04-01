@@ -1,0 +1,30 @@
+<div class="container login">
+
+	<div class="row jumbotron" align="center">Login Page</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label for="Email">Email:</label>
+				<input type="text" [(ngModel)]="signin.email" class="form-control" id="email">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="form-group">
+				<label for="name">Password:</label>
+				<input type="password" [(ngModel)]="signin.password" class="form-control" id="password">
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="btn-group">
+				<button type="button" class="btn btn-submit"  (click)="submitLogin();" routerLink="/user">LOGIN</button>
+			</div>
+		</div>
+	</div>
+
+</div>

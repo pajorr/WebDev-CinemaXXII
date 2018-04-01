@@ -1,0 +1,74 @@
+<div class= "container" style="background-color: white;">
+
+<div class="row jumbotron" align="center">
+	<div class="col-sm-12">
+		<p>Booking Page</p>
+	</div>	
+</div>
+
+<div class="alert alert-dark" role="alert" align="center">
+  <p>{{seatAlert}}</p>
+</div>
+
+<div class="row" align="center">
+		<div class="col-sm-12">
+			<div class="dropdown">
+  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" (click)="getMovies()">Movies
+  				<span class="caret"></span></button>
+  				<ul class="dropdown-menu">
+    				<li (click)="getTime(0)"><a href="#" onClick="return false;">{{movie[0]}}</a></li>
+    				<li (click)="getTime(1)"><a href="#" onClick="return false;">{{movie[1]}}</a></li>
+    			</ul>
+</div>
+		</div>
+	</div>
+
+<div class="row" align="center">
+		<div class="col-sm-12">
+			<div class="dropdown">
+  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"(click)="setTime()">Time
+  				<span class="caret"></span></button>
+  				<ul class="dropdown-menu">
+    				<li (click)="getSeat(0)"><a href="#" onClick="return false;">{{time[0]}}</a></li>
+    				<li (click)="getSeat(1)"><a href="#" onClick="return false;">{{time[1]}}</a></li>
+    			</ul>
+</div>
+		</div>
+	</div>
+
+<div class="row" align="center">
+		<div class="col-sm-12">
+			<div class="dropdown">
+  				<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"(click)="setSeat()">Seat
+  				<span class="caret"></span></button>
+  				<ul class="dropdown-menu">
+    				<li (click)="submitTicket(0)"><a href="#" onClick="return false;">{{seat[0]}}</a></li>
+    				<li (click)="submitTicket(1)"><a href="#" onClick="return false;">{{seat[1]}}</a></li>
+    				<li (click)="submitTicket(2)"><a href="#" onClick="return false;">{{seat[2]}}</a></li>
+    			</ul>
+</div>
+		</div>
+	</div>
+
+
+
+	<div class="row" align="center">
+		<div class="col-sm-12">
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary" (click)="book()">CONFIRM</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" align="center"	>
+		<div class="col-sm-12">
+			<div class="btn-group">
+				<button type="button" class="btn btn-success" (click)="done()" routerLink="/user">DONE</button>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
