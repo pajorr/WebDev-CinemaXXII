@@ -27,7 +27,7 @@ export class TransactionComponent implements OnInit {
 }
 
   getTransaction(){
-    for(let x=0; x<3; x++){
+    for(let x=0; x<6; x++){
     this.TransactionId[x] = JSON.parse(localStorage.getItem('transactionResponse')).transactions[x].id;
     this.MovieName[x] = JSON.parse(localStorage.getItem('transactionResponse')).transactions[x].movie_name;
     this.MovieTime[x] = JSON.parse(localStorage.getItem('transactionResponse')).transactions[x].time;
