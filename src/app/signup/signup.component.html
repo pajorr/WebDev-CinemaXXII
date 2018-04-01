@@ -13,7 +13,7 @@
 		<div class="col-sm-12">
 			<div class="form-group">
 				<label for="email">E-mail:</label>
-				<input type="text" [(ngModel)]="register.email" class="form-control" id="email">
+				<input type="email" [(ngModel)]="register.email" class="form-control" id="email">
 			</div>
 		</div>
 	</div>
@@ -22,7 +22,7 @@
 		<div class="col-sm-12">
 			<div class="form-group">
 				<label for="password">Password:</label>
-				<input type="text" [(ngModel)]="register.password" class="form-control" id="password">
+				<input type="password" [(ngModel)]="register.password" class="form-control" id="password">
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 		<div class="col-sm-12">
 			<div class="form-group">
 				<label for="date">Date of Birth:</label>
-				<input type="text" [(ngModel)]="register.dob" class="form-control" id="date">
+				<input type="text" [(ngModel)]="register.dob" class="form-control" id="date"  placeholder="yyyy/mm/dd">
 			</div>
 		</div>
 	</div>
@@ -48,7 +48,7 @@
 	<div class="row">
 		<div class="col-sm-12">
 			<div class="btn-group">
-				<button type="button" class="btn btn-submit" (click)="submitPost()">SIGN UP</button>
+				<button type="button" class="btn btn-submit"(click)="submitPost()">SIGN UP</button>
 			</div>
 		</div>
 	</div>

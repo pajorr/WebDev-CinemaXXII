@@ -24,7 +24,8 @@ export class SignupComponent implements OnInit {
            err => console.log(err),
            () => console.log('Request Completed')
         ); 
-        this.status = true;       
+        this.status = true;
+        setTimeout(()=> window.location.href = "", 2000);      
     }
 
   ngOnInit() {
