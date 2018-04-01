@@ -29,11 +29,6 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
   	   this.register = new Register();
-  	   this.register.dob = "1992/12/02";
-  	   this.register.email = "pajorr2@gmail.com";
-       this.register.name = "Dylan";
-       this.register.password = "qwer";
-       this.register.phone = "081215060991";
 
 
   }

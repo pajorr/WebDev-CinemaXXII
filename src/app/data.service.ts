@@ -16,7 +16,7 @@ export class DataService {
 
 	returnCommentStatus:Object = [];
 	//user
-	response: any = {};
+
 	token: any = {};
 	userName: any = {};
 	userEmail: any = {};
@@ -140,15 +140,15 @@ export class DataService {
 		}
 		//login
 		postSignIn(signin:SignIn){
-
+				let response: any = {};
 			//let headers = new Headers();
 			//headers.append('Content-Type', 'application/json');
 			let url = 'https://api.cinemaxxii.me/api/login';
 			return this.http.post(url, signin).map(res=> {
 			console.log(res);
 
-			this.response = res;
-			localStorage.setItem('response', JSON.stringify(this.response));
+			response = res;
+			localStorage.setItem('response', JSON.stringify(response));
 			this.token = JSON.parse(localStorage.getItem('response')).data.token;
 			this.userName = JSON.parse(localStorage.getItem('response')).data.user["0"].name;
 			this.userEmail = JSON.parse(localStorage.getItem('response')).data.user["0"].email;
@@ -164,11 +164,6 @@ export class DataService {
 
 	}
 
-		 LogOut(){
-		 	this.token=null;
-		 	localStorage.removeItem('token');
-
-		 }
 
 	
 }

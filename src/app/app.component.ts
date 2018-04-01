@@ -9,6 +9,5 @@ export class AppComponent {
   title = 'app';
 
   ngOnInit(){
-  	localStorage.clear();
   }
 }

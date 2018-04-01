@@ -17,24 +17,21 @@ export class LoginComponent implements OnInit {
   responseStatus:Object= [];
   status:boolean;
 
+
     submitLogin(){
 
       this.dataService.postSignIn(this.signin).subscribe(
-             data => {},
-             err => {console.log(err)},
-             () => console.log('Request Completed')
-
-
+             () => console.log('Login Completed')
           ); 
-          this.status = true; 
-   
+          this.status = true;
+          setTimeout(()=> window.location.href = "", 2000);
     }
+
+
 
     ngOnInit() {
 
       this.signin = new SignIn();
-      this.signin.email = "pajorr2@gmail.com";
-      this.signin.password = "qwer";
     
     }
 

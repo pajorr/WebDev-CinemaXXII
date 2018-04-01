@@ -17,4 +17,9 @@ export class NavbarComponent implements OnInit {
  
   }
 
+  logout(){
+  	window.location.href="/home";
+  	localStorage.clear();
+  }
+
 }

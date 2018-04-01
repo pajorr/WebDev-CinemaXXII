@@ -50,15 +50,19 @@
         <li><a routerLink="/about"><div class="hfont">ABOUT US</div></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <div *ngIf="isLogin" style="padding-top: 5px; padding-right: 10px; padding-bottom: 2px;">
+          <button type="button" class="btn btn-danger" (click)="logout()">LOGOUT</button>
+        </div>
+
          <div class="btn-group" style="padding-top: 5px; padding-right: 10px; padding-bottom: 2px;"  *ngIf="!isLogin">
-                                    <button type="button" class="btn btn-danger">LOGIN</button>
-                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" >
+                                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" >LOGIN
                                     <span class="caret"></span></button>                    
                                         <ul class="dropdown-menu" role="menu">
                                           <li><a routerLink="/login">SIGN IN</a></li>
                                           <li><a routerLink="/signup">SIGN UP</a></li>
                                        </ul>
-                                </div>
+        </div>
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
            <li><a routerLink="/user"><div class="hfont">PROFILE</div></a></li>
