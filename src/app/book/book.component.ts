@@ -33,7 +33,7 @@ export class BookComponent implements OnInit {
   }
 
   getMovies(){
-    for (var x = 0; x < 2; x++){
+    for (var x = 0; x < 4; x++){
     this.movie[x]=JSON.parse(localStorage.getItem('movieResponse'))[x].movie_name;
      }
   }
