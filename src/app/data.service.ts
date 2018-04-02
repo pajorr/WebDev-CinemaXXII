@@ -7,7 +7,6 @@ import { MovieId } from './MovieId';
 import { SeatId } from './SeatId'
 import { Ticket } from './Ticket'
 import { Response } from '@angular/http';
-import { TopUp } from './TopUp';
 
 
 import 'rxjs/add/operator/map'; 
@@ -24,7 +23,7 @@ export class DataService {
 	userPhone: any = {};
 	//user
 
-	//movie
+	//moviea
 	movieResponse: any = [];
 	timeResponse: any = [];
 	seatResponse: any = [];
