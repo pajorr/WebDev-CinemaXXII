@@ -1,0 +1,1 @@
+function myFunction(){var e,t,n,m;for(e=document.getElementById("myInput").value.toUpperCase(),t=document.getElementById("myTable").getElementsByTagName("tr"),m=0;m<t.length;m++)(n=t[m].getElementsByTagName("td")[0])&&(t[m].style.display=n.innerHTML.toUpperCase().indexOf(e)>-1?"":"none")}
