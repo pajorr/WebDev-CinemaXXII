@@ -7,6 +7,7 @@ import { MovieId } from './MovieId';
 import { SeatId } from './SeatId'
 import { Ticket } from './Ticket'
 import { Response } from '@angular/http';
+import { TopUp } from './TopUp';
 
 
 import 'rxjs/add/operator/map'; 
@@ -125,6 +126,8 @@ export class DataService {
 			return this.http.post(url, ticket, {headers:headers}).map(res=> {
 				console.log(res);
 
+				setTimeout(1500);
+
 				if(res == "Failed, Seat is already booked"){
 					localStorage.setItem('seatStatus', 'taken')
 				}
@@ -163,6 +166,8 @@ export class DataService {
 
 
 	}
+
+
 
 
 	

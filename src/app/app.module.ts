@@ -20,6 +20,7 @@ import { DataService } from './data.service';
 import { MovieComponent } from './movie/movie.component';
 import { UserComponent } from './user/user.component';
 import { TransactionComponent } from './transaction/transaction.component';
+import { TopupComponent } from './topup/topup.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { TransactionComponent } from './transaction/transaction.component';
     SignupComponent,
     MovieComponent,
     UserComponent,
-    TransactionComponent
+    TransactionComponent,
+    TopupComponent
   ],
   imports: [
     BrowserModule,
